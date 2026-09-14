@@ -21,5 +21,5 @@ jobs:
           HFTOKEN: ${{ secrets.HFTOKEN }}
 
         run: |
-          git remote add hf https://thiagohersan:$HFTOKEN@huggingface.co/spaces/acervos-digitais/acervos-activations-gradio
+          git remote add hf https://thiagohersan:$HFTOKEN@huggingface.co/spaces/thiagohersan/acervos-activations-gradio
           git push -f hf main

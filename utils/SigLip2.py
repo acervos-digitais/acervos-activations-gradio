@@ -7,7 +7,7 @@ class SigLip2:
   # MODEL_NAME = "google/siglip2-giant-opt-patch16-256"  # from utils
   # MODEL_NAME = "google/siglip2-so400m-patch16-512"     # bigger image
   # MODEL_NAME = "google/siglip2-so400m-patch14-384"     # more patches
-  MODEL_NAME = "siglip2-so400m-patch16-256"
+  MODEL_NAME = "google/siglip2-so400m-patch16-256"
   DEVICE = "cuda" if cuda.is_available() else "cpu"
 
   @staticmethod

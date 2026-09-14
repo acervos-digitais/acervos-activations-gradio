@@ -1,4 +1,5 @@
 import gradio as gr
+import spaces
 
 from PIL import Image as PImage
 
@@ -7,6 +8,7 @@ from utils.image_utils import heatmap_image, heatmap_image_rbf, mask_image
 
 msl = SigLip2()
 
+@spaces.GPU
 def display_heatmaps(img, text):
   text = [text]
   similarity_map_np = msl.get_gradient_activation_map(img, text)
